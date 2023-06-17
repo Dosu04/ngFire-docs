@@ -10,6 +10,8 @@ If you haven't installed the following:
 
 ### [Setup Project](#2)
 
+### [Deploy Project](#3)
+
 &nbsp;
 
 &nbsp;
@@ -42,3 +44,7 @@ If you haven't installed the following:
 -  Add `"postinstall": "ngcc"` to your package.json file under scripts
 -  Navigate to [Firebase Console](https://console.firebase.com), create a new project and app
 -  `ng add @angular/fire` 
+
+#3
+### Deploy Project
+`ng appName:deploy`
