@@ -39,7 +39,7 @@ If you haven't installed the following:
 
 # 2
 ### Project Setup
--  `ng new appName`
+-  `ng new app-name`
 -  `ng add @angular/material`
 -  Add `"postinstall": "ngcc"` to your package.json file under scripts
 -  Navigate to [Firebase Console](https://console.firebase.com), create a new project and app
@@ -47,4 +47,4 @@ If you haven't installed the following:
 
 # 3
 ### Deploy Project
-`ng appName:deploy`
+`ng app-name:deploy`
