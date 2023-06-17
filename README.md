@@ -17,7 +17,7 @@ If you haven't installed the following:
 &nbsp;
 
 ## Content
-### Frome Scracth {#one}
+### Frome Scracth
 - [Download & Install VS Code](https://code.visualstudio.com/download)
 - Install VS Code Extensions
   - Angular Language Service
