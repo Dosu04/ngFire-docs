@@ -1,5 +1,5 @@
 # ngFire-setup
-Tutorial/Docs for setting up a development environment for an AngularFire Project 2023 by ME
+Tutorial/Docs for setting up an AngularFire Project 2023 by ME
 
 ## Navigation
 ### [Setup from Scratch](#1)
