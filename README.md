@@ -2,7 +2,7 @@
 Tutorial/Docs for setting up a development environment for an AngularFire Project 2023 by ME
 
 ## Navigation
-### [Setup from Scratch](#FromScratch)
+### [Setup from Scratch](#1)
 If you haven't installed the following:
 - __VS Code__ (or any good code editor)
 - __Node__
@@ -17,7 +17,8 @@ If you haven't installed the following:
 &nbsp;
 
 ## Content
-# From Scratch
+# 1
+### From Scratch
 - [Download & Install VS Code](https://code.visualstudio.com/download)
 - Install VS Code Extensions
   - Angular Language Service
