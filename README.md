@@ -2,13 +2,13 @@
 Tutorial/Docs for setting up an AngularFire Project 2023 by ME
 
 ## Navigation
-### [Setup from Scratch](#1)
+### [Setup Development Environment](#1)
 If you haven't installed the following:
 - __VS Code__ (or any good code editor)
 - __Node__
 - __Angular CLI__
 
-### [Setup Development Environment](#2)
+### [Setup Project](#2)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ If you haven't installed the following:
 
 ## Content
 # 1
-### From Scratch
+### Development Environment 
 - [Download & Install VS Code](https://code.visualstudio.com/download)
 - Install VS Code Extensions
   - Prettier
@@ -36,7 +36,7 @@ If you haven't installed the following:
 - Install Angular CLI `npm i -g @angular/cli@latest`
 
 # 2
-### Development Environment
+### Project Setup
 -  `ng new appName`
 -  `ng add @angular/material`
 -  Add `"postinstall": "ngcc"` to your package.json file under scripts
