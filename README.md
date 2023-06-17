@@ -47,4 +47,4 @@ If you haven't installed the following:
 
 # 3
 ### Deploy Project
-`ng app-name:deploy`
+`ng deploy`
