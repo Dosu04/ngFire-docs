@@ -45,6 +45,6 @@ If you haven't installed the following:
 -  Navigate to [Firebase Console](https://console.firebase.com), create a new project and app
 -  `ng add @angular/fire` 
 
-#3
+# 3
 ### Deploy Project
 `ng appName:deploy`
