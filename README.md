@@ -3,13 +3,14 @@ Tutorial/Docs for setting up a development environment for an AngularFire Projec
 
 ## Navigation
 ### [Setup from Scratch](#one)
-If you haven't installed the following
-- _VS Code_
-- _Node_
-- _Angular CLI_
+If you haven't installed the following:
+- __VS Code__
+- __Node__
+- __Angular CLI__
 
+### [Setup Development Environment](#two)
 
-### 
 
 ## Content
 ### Frome Scracth {#one}
+- 
