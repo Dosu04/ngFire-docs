@@ -8,7 +8,7 @@ If you haven't installed the following:
 - __Node__
 - __Angular CLI__
 
-### [Setup Development Environment](#two)
+### [Setup Development Environment](#2)
 
 &nbsp;
 
@@ -21,9 +21,11 @@ If you haven't installed the following:
 ### From Scratch
 - [Download & Install VS Code](https://code.visualstudio.com/download)
 - Install VS Code Extensions
+  - Prettier
   - Angular Language Service
   - Angular Snippets
-  - Autorename tag
+  - Auto rename tag
+  - Auto close tag
   - CSS Peak
   - HTML CSS Support
   - Bracket pair colorizer 2
@@ -33,4 +35,10 @@ If you haven't installed the following:
 - [Download Node](https://nodejs.org/pt-br/download)
 - Install Angular CLI `npm i -g @angular/cli@latest`
 
-
+# 2
+### Development Environment
+-  `ng new appName`
+-  `ng add @angular/material`
+-  Add `"postinstall": "ngcc"` to your package.json file under scripts
+-  Navigate to [Firebase Console](https://console.firebase.com), create a new project and app
+-  `ng add @angular/fire` 
