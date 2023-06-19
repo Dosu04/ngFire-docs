@@ -1,5 +1,7 @@
-# ngFire-setup
-Tutorial/Docs for setting up an AngularFire Project 2023 by ME
+# ngFire-docs
+Tutorial/Docs for AngularFire Project 2023 by ME (Emmanuel Oladosu)
+
+#Getting Started/Setup
 
 ## Navigation
 ### [Setup Development Environment](#1)
@@ -40,8 +42,11 @@ If you haven't installed the following:
 # 2
 ### Project Setup
 -  `ng new app-name`
--  `ng add @angular/material`
--  Add `"postinstall": "ngcc"` to your package.json file under scripts
+-  `cd app-name`
+-  `ng add @angular/material` **(optional)**
+-  Add `"postinstall": "ngcc"` to your package.json file under scripts **(optional)**
+-  `npm install -g firebase-tools`
+-  `firebase login`
 -  Navigate to [Firebase Console](https://console.firebase.com), create a new project and app
 -  `ng add @angular/fire` 
 
