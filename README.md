@@ -1,7 +1,7 @@
-# ngFire-docs
+### ngFire-docs
 Tutorial/Docs for AngularFire Project 2023 by ME (Emmanuel Oladosu)
 
-#Getting Started/Setup
+# Getting Started/Setup
 
 ## Navigation
 ### [Setup Development Environment](#1)
