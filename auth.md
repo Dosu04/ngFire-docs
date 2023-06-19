@@ -1,21 +1,5 @@
-
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-// import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
-// import { provideAuth, getAuth } from '@angular/fire/auth';
-// import { provideDatabase, getDatabase } from '@angular/fire/database';
-// import { provideFirestore, getFirestore } from '@angular/fire/firestore';
-// import { provideFunctions, getFunctions } from '@angular/fire/functions';
-// import { provideMessaging, getMessaging } from '@angular/fire/messaging';
-// import { providePerformance, getPerformance } from '@angular/fire/performance';
-// import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
-// import { provideStorage, getStorage } from '@angular/fire/storage';
-import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire/compat';
+1. Import Angular Fire Auth Module to your app.module.ts file
+``` 
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
@@ -24,24 +8,29 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    // provideFirebaseApp(() => initializeApp(environment.firebase)),
-    // provideAnalytics(() => getAnalytics()),
-    // provideAuth(() => getAuth()),
-    // provideDatabase(() => getDatabase()),
-    // provideFirestore(() => getFirestore()),
-    // provideFunctions(() => getFunctions()),
-    // provideMessaging(() => getMessaging()),
-    // providePerformance(() => getPerformance()),
-    // provideRemoteConfig(() => getRemoteConfig()),
-    // provideStorage(() => getStorage())
   ],
   providers: [
-    // ScreenTrackingService, UserTrackingService
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+```
+
+2. Create the view
+``` 
+<router-outlet></router-outlet>
+
+<ng-container *ngIf="user$ | async as user">
+  <ng-container *ngIf="user.user !== null; else NotSignedIn">
+    <button (click)="onSignOutClick()">Sign Out</button>
+    <h2>Welcome, {{ user.user.displayName }}!</h2>
+    <p>email: {{ user.user.email }}!</p>
+    <p>user id: {{ user.user.uid }}!</p>
+    <img src="{{ user.user.photoURL }}" alt="" />
+  </ng-container>
+  <ng-template #NotSignedIn>
+    <button (click)="onSignInClick()">Sign In with Google</button>
+  </ng-template>
+</ng-container>
+```
