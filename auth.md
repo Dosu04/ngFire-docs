@@ -34,3 +34,46 @@ export class AppModule { }
   </ng-template>
 </ng-container>
 ```
+
+3. Add the Logic
+```
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { GoogleAuthProvider } from 'firebase/auth'
+import { map } from 'rxjs';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  user$ = this.afAuth.authState.pipe(
+    map(user => ({ user }))
+  );
+
+  constructor(private afAuth: AngularFireAuth) {}
+
+  onSignInClick(): void {
+    this.afAuth.signInWithPopup(new GoogleAuthProvider).then(() => {
+      alert('Signed In Successfully')
+    }).catch((error) => {
+      alert(error)
+    })
+
+  }
+
+  onSignOutClick() {
+    const confirmation = window.confirm('Are you sure you want to log out?');
+    if (confirmation) {
+      this.afAuth.signOut().then(() => {
+        alert('Logged Out');
+      }).catch((error) => {
+        alert(error);
+      });
+    }
+  }
+
+}
+
+```
