@@ -1,4 +1,4 @@
-1. Import Angular Fire Auth Module to your app.module.ts file
+1. Import 'Angulr Fire Module' and 'Angular Fire Auth Module' to your app.module.ts file
 ``` 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -10,7 +10,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
   ],
   imports: [
     AngularFireModule,
-    AngularFireAuthModule,
+    AngularFireAuthModule
   ],
   providers: [
   ],
