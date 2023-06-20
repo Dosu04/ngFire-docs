@@ -1,5 +1,6 @@
 1. Import 'Angulr Fire Module' and 'Angular Fire Auth Module' to your app.module.ts file
 ``` 
+import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
@@ -9,7 +10,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     AppComponent
   ],
   imports: [
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule
   ],
   providers: [
