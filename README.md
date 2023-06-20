@@ -1,5 +1,5 @@
 ### ngFire-docs
-Tutorial/Docs for AngularFire Project 2023 by ME (Emmanuel Oladosu)
+Docs for AngularFire Project 2023 by ME (Emmanuel Oladosu)
 - Angular 16
 - AngularFire 7.6
 - Firebase 9
