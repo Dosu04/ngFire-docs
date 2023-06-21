@@ -1,5 +1,5 @@
 1. Import 'Angulr Fire Module' and 'Angular Fire Auth Module' to your app.module.ts file
-``` 
+```js
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -21,7 +21,7 @@ export class AppModule { }
 ```
 
 2. Create the view
-``` 
+```jsx
 <router-outlet></router-outlet>
 
 <ng-container *ngIf="user$ | async as user">
@@ -39,7 +39,7 @@ export class AppModule { }
 ```
 
 3. Add the Logic
-```
+```js
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { GoogleAuthProvider } from 'firebase/auth'
 import { map } from 'rxjs';
