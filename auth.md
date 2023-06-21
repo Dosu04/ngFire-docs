@@ -1,5 +1,5 @@
 1. Import 'Angulr Fire Module' and 'Angular Fire Auth Module' to your app.module.ts file
-```js
+```ts
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -39,7 +39,7 @@ export class AppModule { }
 ```
 
 3. Add the Logic
-```js
+```ts
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { GoogleAuthProvider } from 'firebase/auth'
 import { map } from 'rxjs';
