@@ -21,7 +21,7 @@ export class AppModule { }
 ```
 
 2. Create the view
-```jsx
+```html
 <router-outlet></router-outlet>
 
 <ng-container *ngIf="user$ | async as user">
